@@ -1,0 +1,303 @@
+body {
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text y='28' font-size='28'>🎬</text></svg>"), auto;
+  width: 100%;
+} 
+
+
+
+.announcement-bar{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color:  #bf2626;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.scroll-text{ 
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: -8px;
+  animation: scroll-left 30s linear infinite; 
+}
+
+
+#bw {
+ border-radius: 50px;
+}
+
+#top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #bf2626;
+  width: 100%;
+  height: 40px;
+}
+
+#top article {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+  margin-left: 400px;
+  margin-top: 5px;
+}
+
+#top a{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#movie{
+  width: 680px;
+  height: 680px;
+  min-width: 680px;
+  min-height: 680px;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+#title{
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 500px;
+  background-color: #690808;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+#one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #690808;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+#bride{
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+    width: 250px;
+    display: block;
+    transition: 0.3s ease;
+}
+
+#image-container {
+  position: relative;
+  display: inline-block;
+}
+
+#image-container:hover #bride {
+  box-shadow: 0 0 25px #00aaff;
+  filter: brightness(0.6);
+}
+
+#image-container:hover #overlay {
+  opacity: 1;
+}
+
+#overlay {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#fox{
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 250px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+#image-containerr{
+  position: relative;
+  display: inline-block;
+}
+
+#image-containerr:hover #fox {
+  box-shadow: 0 0 25px orange;
+  filter: brightness(0.6);
+}
+
+#image-containerr:hover #orange {
+  opacity: 1;
+}
+
+#orange {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#ghost{
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 250px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+#image-containerrr{
+  position: relative;
+  display: inline-block;
+}
+
+#image-containerrr:hover #ghost{
+  box-shadow: 0 0 25px green;
+  filter: brightness(0.6);
+}
+
+#image-containerrr:hover #green{
+  opacity: 1;
+}
+
+#green{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color:#21666F;
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+#text{
+  font-family: "Datatype", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: #FFDD94;
+  font-variation-settings: "wdth" 100;
+  display: block;
+  margin-left: 50%;
+  margin-top: -420px;
+  flex-wrap: wrap; 
+  padding-right: 170px;
+
+}
+
+#herita{
+  display: block;
+  margin-left: 3%;
+  margin-top: -110px;
+  width: 560px;
+  height: 560px;
+  min-width: 560px;
+  min-height: 560px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #D9A282;
+  padding: 20px;
+  width: 100%;
+  height: 800px;
+  border-radius: 20px;
+}
+
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, auto);   
+  gap: 30px;                            
+  justify-items: space-between;                                  
+  padding: 10px;
+}
+
+#clay {
+  width: 330px;
+  height: 330px;
+  min-width: 330px;
+  min-height: 330px;
+  aspect-ratio: 6 / 6;
+  object-fit: cover;
+}
